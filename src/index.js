@@ -67,9 +67,10 @@ export default class LinearGradient extends PureComponent {
         {...otherProps}
         style={[
           style,
-          { backgroundImage: `linear-gradient(${this.getAngle()},${this.getColors()})` },
+          { background: `linear-gradient(${this.getAngle()},${this.getColors()})` },
         ]}
         onLayout={this.measure}
+	      collapsible={false}
       >
         {children}
       </View>
